@@ -51,12 +51,12 @@ As seguintes ferramentas foram usadas na construção do projeto:
 Lista das próximas features a serem implementadas:
 
 - [X] Inicialização do Projeto;
-- [X] Codificação da autenticação;
-- [X] Testes de autenticação;
+- [ ] Codificação da autenticação;
+- [ ] Testes de autenticação;
 - [ ] Construção de imagem Docker para o projeto;
 - [ ] Testes utilizando Docker;
 - [ ] Atualização do README;
-- [X] Documentação;
+- [ ] Documentação;
 
 ## :rocket: Como executar o projeto Local
 
@@ -85,10 +85,7 @@ $ code .
 # Faça uma cópia do arquivo .env.example para .env. e altere-o com as suas variáveis de ambiente.
 
 # Execute a aplicação em modo de desenvolvimento:
-$ composer start
-
-# Ou da maneira tradicional utilizando:
-$ php -S localhost:8000 -t public
+$ php artisan serve
 
 # Ao finalizar da etapa anterior, o backend se inciará na porta 8000 - acesse <http://localhost:8000>.
 
