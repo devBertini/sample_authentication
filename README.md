@@ -5,18 +5,12 @@
 </h1>
 
 <h4 align="center"> 
-	 Backend - Amostras de Autenticação <br><br> 🚧 Em Construção... 🚧
+	 Backend - Amostra de Autenticação <br><br> 🚧 Em Construção... 🚧
 </h4>
 
 <p align="center">
   
-  <img alt="PHP Version" src="https://img.shields.io/badge/PHP-8.2-red">
-  <img alt="PHP Version" src="https://img.shields.io/badge/PHP-8.1-red">
-  <img alt="PHP Version" src="https://img.shields.io/badge/PHP-8.0-red">
-  <img alt="PHP Version" src="https://img.shields.io/badge/PHP-7.4-red">
-  <img alt="PHP Version" src="https://img.shields.io/badge/PHP-7.3-red">
-  <img alt="PHP Version" src="https://img.shields.io/badge/PHP-7.2-red">
-  <img alt="PHP Version" src="https://img.shields.io/badge/PHP-7.1-red">
+  <img alt="PHP Version" src="https://img.shields.io/badge/PHP-8.2-green">
   
   <img alt="Docker Suporte" src="https://img.shields.io/badge/Docker-True-red">
   
@@ -35,13 +29,11 @@
 ## 💻 Sobre o projeto
 <table align="center"><tr><td align="center" width="9999">
 <h3 align="center"> 
-  <b>Amostras de Autenticação</b>
+  <b>Amostra de Autenticação</b>
 </h3>
 </td></tr></table>
 
-O seguinte projeto tem o intuito de auxiliar na velocidade de desenvolvimento de novos projetos, trazendo consigo, toda a parte de autenticação já testada e implementada em diversas versões da linguagem PHP utilizando o framework Laravel.
-
-Posteriormente, também será adicionado os arquivos e configurações Docker para serem utilizados.
+O seguinte projeto tem o intuito de auxiliar na velocidade de desenvolvimento de novos projetos, trazendo consigo, toda a parte de autenticação já testada e implementada em PHP 8.2 utilizando o framework Laravel 9.
 
 O projeto irá seguir os padrões informados da PSR-4.
 
@@ -52,19 +44,19 @@ Caso possua alguma dúvida ou queria contribuir também, utilize a sessão Issue
 As seguintes ferramentas foram usadas na construção do projeto:
 
 - [PHP](https://www.php.net/)
-- [Laravel](https://laravel.com/)
+- [Laravel](https://laravel.com/docs/9.x)
 
 ## :triangular_flag_on_post: Próximas Implementações
 
 Lista das próximas features a serem implementadas:
 
-- [ ] Construir Branch de autenticação utilizando o Laravel 9 e PHP 8.2;
-- [ ] Construir Branch de autenticação utilizando o Laravel 9 e PHP 8.1;
-- [ ] Construir Branch de autenticação utilizando o Laravel 9 e PHP 8.0;
-- [ ] Construir Branch de autenticação utilizando o Laravel 8 e PHP 7.4;
-- [ ] Construir Branch de autenticação utilizando o Laravel 8 e PHP 7.3;
-- [ ] Construir Branch de autenticação utilizando o Laravel 7 e PHP 7.2;
-- [ ] Construir Branch de autenticação utilizando o Laravel 5.8 e PHP 7.1;
+- [X] Inicialização do Projeto;
+- [X] Codificação da autenticação;
+- [X] Testes de autenticação;
+- [ ] Construção de imagem Docker para o projeto;
+- [ ] Testes utilizando Docker;
+- [ ] Atualização do README;
+- [X] Documentação;
 
 ## :rocket: Como executar o projeto Local
 
@@ -78,8 +70,8 @@ Além disso, é recomendado possuir um bom editor para se trabalhar com o códig
 ### :game_die: Executando o Projeto (Local)
 
 ```bash
-# Primeiro, realize o clone deste repositório utilizando a branch desejada (substituia a palavra "main" no comando a seguir pelo nome da branch desejada):
-$ git clone -b main https://github.com/devBertini/sample_authentication.git
+# Primeiro, realize o clone deste repositório utilizando o comando a seguir:
+$ git clone -b php_8_2-laravel_9 https://github.com/devBertini/sample_authentication.git
 
 # Acesse a pasta do projeto no terminal/cmd utilizando:
 $ cd sample_authentication
