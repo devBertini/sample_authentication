@@ -5,7 +5,7 @@
 </h1>
 
 <h4 align="center"> 
-	 Backend - Amostra de Autenticação <br><br> 🚧 Em Construção... 🚧
+	 Backend - Exemplo de Autenticação <br><br> 🚧 Em Construção... 🚧
 </h4>
 
 <p align="center">
