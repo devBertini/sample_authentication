@@ -1,6 +1,8 @@
 <?php
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\UserController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +16,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+// Auth
+Route::post('/login', [AuthController::class, 'login']);
+Route::post('/recovery', [UserController::class, 'recovey']);
+
+
+Route::group(['middleware' => ['auth:sanctum']], function() {
+    // Auth
+    Route::post('/logout', [AuthController::class, 'logout']);
+    
+    // Users
+    Route::get('/users/{qtdPage}', [UserController::class, 'index'])->where('id', '[0-9]+');
+    Route::get('/user/{id}', [UserController::class, 'show'])->where('id', '[0-9]+');
+    Route::post('/user', [UserController::class, 'store']);
+    Route::put('/user/{id}', [UserController::class, 'update'])->where('id', '[0-9]+');
+    Route::patch('/user/{id}', [UserController::class, 'updatePassword'])->where('id', '[0-9]+');
+    
 });
