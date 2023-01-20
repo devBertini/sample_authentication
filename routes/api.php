@@ -27,9 +27,9 @@ Route::group(['middleware' => ['auth:sanctum']], function() {
     
     // Users
     Route::get('/users/{qtdPage}', [UserController::class, 'index'])->where('id', '[0-9]+');
-    Route::get('/user/{id}', [UserController::class, 'show'])->where('id', '[0-9]+');
-    Route::post('/user', [UserController::class, 'store']);
-    Route::put('/user/{id}', [UserController::class, 'update'])->where('id', '[0-9]+');
-    Route::patch('/user/{id}', [UserController::class, 'updatePassword'])->where('id', '[0-9]+');
+    Route::get('/users/{id}', [UserController::class, 'show'])->where('id', '[0-9]+');
+    Route::post('/users', [UserController::class, 'store']);
+    Route::put('/users/{id}', [UserController::class, 'update'])->where('id', '[0-9]+');
+    Route::patch('/users/{id}', [UserController::class, 'updatePassword'])->where('id', '[0-9]+');
     
 });
