@@ -19,6 +19,10 @@ class AuthController extends Controller
 
         $user = User::where('email', $request->email)->firstOrFail();
 
+        if($user->active == false) {
+            return response()->json(['error' => 'The given account is Disabled. Please contact at administrator.'], 401);
+        }
+
         if($user->block == true) {
             return response()->json(['error' => 'The given account is blocked. Please perform account recovery to login again.'], 401);
         }
@@ -50,6 +54,9 @@ class AuthController extends Controller
             }
 
             return response()->json(['error' => 'It was not possible to access with the informed user.'], 401);
+        } else {
+            $user->attempts = 0;
+            $user->save();
         }
 
         if($user->admin) {
