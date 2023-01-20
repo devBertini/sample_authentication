@@ -16,10 +16,17 @@ class UserController extends Controller
         $this->user = $request->auth;
     }
 
-    public function index($qtdPage) {
+    public function index(Request $request) {
+
+        if(null !== $request->query('qtdPage')) {
+            $qtdPage = $request->query('qtdPage');
+        } else {
+            $qtdPage = 25;
+        }
+
         try {
             return User::orderBy('name', 'asc')->paginate(
-                $perPage = $qtdPage, $columns = ['id', 'name', 'username', 'email', 'mobile']
+                $perPage = $qtdPage, $columns = ['id', 'name', 'username', 'email', 'mobile', 'admin', 'active', 'block', 'attempts']
             );
             
         } catch (\Throwable $th) {
