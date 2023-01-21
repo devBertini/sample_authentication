@@ -16,6 +16,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Unused Route
+Route::get('/', function () {
+    return response()->json(['success' => 'Unused Route.']);
+});
+
 // Auth
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/recovery', [UserController::class, 'recovey']);
