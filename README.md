@@ -10,7 +10,7 @@
 
 <p align="center">
   
-  <img alt="PHP Version" src="https://img.shields.io/badge/PHP-8.2-green">
+  <img alt="PHP Version" src="https://img.shields.io/badge/PHP-8.1.14-green">
   
   <img alt="Docker Suporte" src="https://img.shields.io/badge/Docker-True-green">
   
@@ -33,7 +33,7 @@
 </h3>
 </td></tr></table>
 
-O seguinte projeto tem o intuito de auxiliar na velocidade de desenvolvimento de novos projetos, trazendo consigo, toda a parte de autenticação já testada e implementada em PHP 8.2 utilizando o framework Laravel 9.
+O seguinte projeto tem o intuito de auxiliar na velocidade de desenvolvimento de novos projetos, trazendo consigo, toda a parte de autenticação já testada e implementada em PHP 8.1.14 utilizando o framework Laravel 9.
 
 O projeto irá segue os padrões informados da PSR-4 e REST.
 
@@ -43,7 +43,7 @@ Caso possua alguma dúvida ou queria contribuir também, utilize a sessão Issue
 
 As seguintes técnologias e ferramentas foram usadas na construção do projeto:
 
-- [PHP 8.2](https://www.php.net/releases/8.2/en.php)
+- [PHP 8.1](https://www.php.net/releases/8.1/en.php)
 - [Laravel 9](https://laravel.com/docs/9.x)
 
 ## :triangular_flag_on_post: Próximas Implementações
@@ -100,7 +100,7 @@ Além disso, é recomendado possuir um bom editor para se trabalhar com o códig
 
 ```bash
 # Primeiro, realize o clone deste repositório utilizando o comando a seguir:
-$ git clone -b php82 https://github.com/devBertini/sample_authentication.git
+$ git clone -b php81 https://github.com/devBertini/sample_authentication.git
 
 # Acesse a pasta do projeto no terminal/cmd utilizando:
 $ cd sample_authentication
@@ -131,7 +131,7 @@ Antes de começar, certifique-se de ter instalado em sua máquina o [Docker][doc
 
 ```bash
 # Primeiro, realize o clone deste repositório utilizando o comando a seguir:
-$ git clone -b php82 https://github.com/devBertini/sample_authentication.git
+$ git clone -b php81 https://github.com/devBertini/sample_authentication.git
 
 # Acesse a pasta do projeto no terminal/cmd utilizando:
 $ cd sample_authentication
