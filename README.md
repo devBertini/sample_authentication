@@ -78,10 +78,14 @@ Além disso, é recomendado possuir um bom editor para se trabalhar com o códig
 ### :game_die: Baixando o Projeto (Local)
 
 ```bash
-# Primeiro, realize o clone deste repositório utilizando a branch desejada 
-# (substituia a palavra "main" no comando a seguir pelo nome da branch desejada):
+# Tudo está separado através das branchs, sinta-se a vontade para explorar.
+
+# Realize o clone deste repositório utilizando a branch desejada 
+# (substituindo a palavra "main" no comando a seguir pelo nome da branch desejada):
 
 $ git clone -b main https://github.com/devBertini/sample_authentication.git
+
+# E para finalizar, dê uma olhada do READEME da branch selecionada. (=
 ```
 
 ## :memo: Licença
