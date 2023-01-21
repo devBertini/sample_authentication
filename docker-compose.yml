@@ -1,0 +1,19 @@
+version: "3.3"
+
+services: 
+  example_app:
+    container_name: example.com.br
+    build: .
+    entrypoint: /usr/local/bin/docker-php-entrypoint-dev
+    command: ["/usr/bin/supervisord", "-n", "-c", "/etc/supervisord.conf"]
+    volumes:
+        - ./:/var/www/app
+    networks:
+        - example_nt
+    restart: always
+    ports: 
+    - 8000:80
+
+networks:
+  example_nt:
+      driver: bridge
