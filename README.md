@@ -5,20 +5,20 @@
 </h1>
 
 <h4 align="center"> 
-	 Backend - Amostras de Autenticação <br><br> 🚧 Em Construção... 🚧
+	 Backend - Exemplo de Autenticação <br><br> 🚧 Em Construção... 🚧
 </h4>
 
 <p align="center">
   
-  <img alt="PHP Version" src="https://img.shields.io/badge/PHP-8.2-red">
-  <img alt="PHP Version" src="https://img.shields.io/badge/PHP-8.1-red">
-  <img alt="PHP Version" src="https://img.shields.io/badge/PHP-8.0-red">
+  <img alt="PHP Version" src="https://img.shields.io/badge/PHP-8.2-green">
+  <img alt="PHP Version" src="https://img.shields.io/badge/PHP-8.1-yellow">
+  <img alt="PHP Version" src="https://img.shields.io/badge/PHP-8.0-yellow">
   <img alt="PHP Version" src="https://img.shields.io/badge/PHP-7.4-red">
   <img alt="PHP Version" src="https://img.shields.io/badge/PHP-7.3-red">
   <img alt="PHP Version" src="https://img.shields.io/badge/PHP-7.2-red">
   <img alt="PHP Version" src="https://img.shields.io/badge/PHP-7.1-red">
   
-  <img alt="Docker Suporte" src="https://img.shields.io/badge/Docker-True-red">
+  <img alt="Docker Suporte" src="https://img.shields.io/badge/Docker-True-green">
   
   <img alt="License" src="https://img.shields.io/badge/license-MIT-green">
 </p>
@@ -35,15 +35,15 @@
 ## 💻 Sobre o projeto
 <table align="center"><tr><td align="center" width="9999">
 <h3 align="center"> 
-  <b>Amostras de Autenticação</b>
+  <b>Exemplo de Autenticação</b>
 </h3>
 </td></tr></table>
 
-O seguinte projeto tem o intuito de auxiliar na velocidade de desenvolvimento de novos projetos, trazendo consigo, toda a parte de autenticação já testada e implementada em diversas versões da linguagem PHP utilizando o framework Laravel.
+O seguinte projeto tem o intuito de auxiliar na velocidade de desenvolvimento de novos projetos, trazendo consigo, toda a parte de autenticação já testada e implementada em diversas versões da linguagem PHP utilizando o framework Laravel e suporte a Docker.
 
 Posteriormente, também será adicionado os arquivos e configurações Docker para serem utilizados.
 
-O projeto irá seguir os padrões informados da PSR-4.
+O projeto irá seguir os padrões informados da PSR-4 e REST.
 
 Caso possua alguma dúvida ou queria contribuir também, utilize a sessão Issues ou entre em contato!
 
@@ -58,53 +58,30 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 Lista das próximas features a serem implementadas:
 
-- [ ] Construir Branch de autenticação utilizando o Laravel 9 e PHP 8.2;
-- [ ] Construir Branch de autenticação utilizando o Laravel 9 e PHP 8.1;
-- [ ] Construir Branch de autenticação utilizando o Laravel 9 e PHP 8.0;
+- [X] Construir Branch de autenticação utilizando o Laravel 9 e PHP 8.2;
+- [X] Construir Branch de autenticação utilizando o Laravel 9 e PHP 8.1;
+- [X] Construir Branch de autenticação utilizando o Laravel 9 e PHP 8.0;
 - [ ] Construir Branch de autenticação utilizando o Laravel 8 e PHP 7.4;
 - [ ] Construir Branch de autenticação utilizando o Laravel 8 e PHP 7.3;
 - [ ] Construir Branch de autenticação utilizando o Laravel 7 e PHP 7.2;
 - [ ] Construir Branch de autenticação utilizando o Laravel 5.8 e PHP 7.1;
-
-## :rocket: Como executar o projeto Local
 
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git][php], [PHP][php] de acordo com a versão desejada e o [Composer][composer].<br>
 
+Ou, caso utilize o [Docker][docker].
+
 Além disso, é recomendado possuir um bom editor para se trabalhar com o código como o [VSCode][vscode].
 
-### :game_die: Executando o Projeto (Local)
+### :game_die: Baixando o Projeto (Local)
 
 ```bash
-# Primeiro, realize o clone deste repositório utilizando a branch desejada (substituia a palavra "main" no comando a seguir pelo nome da branch desejada):
+# Primeiro, realize o clone deste repositório utilizando a branch desejada 
+# (substituia a palavra "main" no comando a seguir pelo nome da branch desejada):
+
 $ git clone -b main https://github.com/devBertini/sample_authentication.git
-
-# Acesse a pasta do projeto no terminal/cmd utilizando:
-$ cd sample_authentication
-
-# Realize a instalação das dependências do projeto:
-$ composer install
-
-# Ao finalizar, caso esteja utilizando o VSCode, você pode abrir o projeto utilizando o seguinte comando:
-$ code .
-
-# Faça uma cópia do arquivo .env.example para .env. e altere-o com as suas variáveis de ambiente.
-
-# Execute a aplicação em modo de desenvolvimento:
-$ composer start
-
-# Ou da maneira tradicional utilizando:
-$ php -S localhost:8000 -t public
-
-# Ao finalizar da etapa anterior, o backend se inciará na porta 8000 - acesse <http://localhost:8000>.
-
-# Para mais informações, consulte a documentação base do framework em:
-# https://laravel.com/
-#
-# A documentação da linguagem em:
-# https://www.php.net/docs.php
 ```
 
 ## :memo: Licença
@@ -127,3 +104,4 @@ Feito com :heart: por <a href="https://www.linkedin.com/in/claudio-bertini/" tit
 [vscode]: https://code.visualstudio.com/
 [composer]: https://getcomposer.org/
 [git]: https://git-scm.com/
+[docker]: https://www.docker.com/
