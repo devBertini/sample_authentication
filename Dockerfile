@@ -1,4 +1,4 @@
-FROM php-nginx:php8.0.27-fpm-nginx1.22.1-alpine3.16
+FROM bert1n1/php-nginx:php8.0.27-fpm-nginx1.22.1-alpine3.16
 
 # set composer related environment variables
 ENV PATH="/composer/vendor/bin:$PATH" \
