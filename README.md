@@ -64,11 +64,11 @@ Lista das próximas features a serem implementadas:
 
 Esse projeto já contempla um CRUD de usuários onde, ao cadastrar um novo usuário, os dados de acesso do mesmo serão enviados ao usuário através do email cadastrado sendo que a senha é gerada automaticamente utilizando 16 caracteres (números, símbolos, numéricos e alfanuméricos com case sensitive) mantendo a segurança de que somente o usuário possua a senha.
 
-<a href="https://imgur.com/cQJCuSG"><img src="https://i.imgur.com/cQJCuSG.jpg" title="source: imgur.com" style="max-width:800px; max-height:450px; width: auto; height: auto;"  /></a>
+<a href="https://imgur.com/cQJCuSG"><img src="https://i.imgur.com/cQJCuSG.jpg" title="source: imgur.com" style="max-width:450px; max-height:225px; width: auto; height: auto;"  /></a>
 
 Também, é implementado a recuperação de senha caso o usuário não a possua mais, pode-se utilizar a rota de recuperação de senhas (conforme o arquivo insomnia no projeto) e, inserindo o email, é gerado uma nova senha do usuário e enviado para o mesmo email.
 
-<a href="https://imgur.com/SrBKAmj"><img src="https://i.imgur.com/SrBKAmj.jpg" title="source: imgur.com" style="max-width:800px; max-height:450px; width: auto; height: auto;" /></a>
+<a href="https://imgur.com/SrBKAmj"><img src="https://i.imgur.com/SrBKAmj.jpg" title="source: imgur.com" style="max-width:450px; max-height:225px; width: auto; height: auto;" /></a>
 
 Também já está configurada a autenticação. O que isso quer dizer?
 
@@ -76,7 +76,7 @@ Ao realizar o login, é salvo no banco de dados o seu token de acesso informando
 
 Ainda no mesmo assunto, se caso o usuário errar a sua senha por 3 vezes, na quarta será bloqueado a sua conta e enviado um email informando-o da tentativa de acesso incorreta e o bloqueio, bastando realizar a recuperação de senha para que a sua conta seja desbloqueada.
 
-<a href="https://imgur.com/bCyw25V"><img src="https://i.imgur.com/bCyw25V.jpg" title="source: imgur.com" style="max-width:800px; max-height:450px; width: auto; height: auto;"  /></a>
+<a href="https://imgur.com/bCyw25V"><img src="https://i.imgur.com/bCyw25V.jpg" title="source: imgur.com" style="max-width:450px; max-height:225px; width: auto; height: auto;"  /></a>
 
 Se caso o administrador desejar, ainda é possível desativar a conta do usuário, onde será retornado a desativação e solicitado o contato ao administrador quando o mesmo tentar realizar o login no sistema.
 
